@@ -1,5 +1,8 @@
-"/^<[a-zA-Z]*>:/gm" @keyword
-"/<[0-9a-zA-Z0-9]+@[0-9a-zA-Z0-9]+>:/gm" @keyword
-"/<[0-9a-zA-Z0-9]+@[0-9a-zA-Z0-9]+[+0-9a-zA-Z0-9]+>:/gm" @keyword
-
-"/[0-9a-zA-Z0-9]+:/gm" @constructor
+(string) @string
+"canvas" @keyword
+"\\B< *-*([A-Z][a-zA-Z0-9_]*)\\b>" @constructor
+"\\B\\s([A-Z][a-zA-Z0-9_]*):[\\s]*\\s" @keyword
+(pair key: (string) @variable)
+(number) @number
+["@", ",", ":"] @string.special.symbol
+"[\\[] *(([A-Z][a-zA-Z0-9_]*) *@ *)(([a-zA-Z_][a-zA-Z0-9_]*) *,* *)(([a-zA-Z_][a-zA-Z0-9_]*) *,* *)(([a-zA-Z_][a-zA-Z0-9_]*) *,* *)(([a-zA-Z_][a-zA-Z0-9_]*) *,* *)(([a-zA-Z_][a-zA-Z0-9_]*) *[\\]]:?)" @keyword
