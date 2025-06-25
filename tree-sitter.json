@@ -6,9 +6,8 @@
       "camelcase": "KvLang",
       "title": "Kivi Language",
       "scope": "source.kv",
-      "file-types": [
-        "kvlang"
-      ],
+      "file-types": ["kvlang", "kv"],
+      "first-line-regex": "^kivy$",
       "injection-regex": "^kvlang$",
       "class-name": "TreeSitterKvlang"
     }
