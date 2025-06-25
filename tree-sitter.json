@@ -1,0 +1,38 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "kvlang",
+      "camelcase": "KvLang",
+      "title": "Kivi Language",
+      "scope": "source.kv",
+      "file-types": [
+        "kvlang"
+      ],
+      "injection-regex": "^kvlang$",
+      "class-name": "TreeSitterKvlang"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Basic Kivy Language Highlighting for Kivy: The Open Source Python App Development Framework.",
+    "authors": [
+      {
+        "name": "RY34"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/RY34/tree-sitter-kvlang"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
