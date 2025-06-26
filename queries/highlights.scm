@@ -1,4 +1,3 @@
-"canvas" @keyword
 (rule_definition) @constructor
 (class_definition) @operator
 (property_definition) @operator
