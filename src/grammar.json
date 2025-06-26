@@ -19,6 +19,10 @@
         {
           "type": "SYMBOL",
           "name": "dynamic_rule"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "int_literal"
         }
       ]
     },
@@ -123,6 +127,10 @@
           "name": "keyword_definition"
         }
       ]
+    },
+    "int_literal": {
+      "type": "PATTERN",
+      "value": "[0-9]+"
     }
   },
   "extras": [

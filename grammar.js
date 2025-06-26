@@ -13,7 +13,8 @@ module.exports = grammar({
   rules: {
     source_file: ($) => repeat($._definition),
 
-    _definition: ($) => choice($.rule_definition, $.dynamic_rule),
+    _definition: ($) =>
+      choice($.rule_definition, $.dynamic_rule, $.int_literal),
 
     rule_definition: ($) =>
       seq(/<[a-zA-Z]*>:/, $.class_definition, $.keyword_definition),
@@ -34,5 +35,6 @@ module.exports = grammar({
         $.class_definition,
         $.keyword_definition,
       ),
+    int_literal: ($) => /[0-9]+/,
   },
 });

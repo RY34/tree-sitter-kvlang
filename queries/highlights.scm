@@ -1,7 +1,8 @@
 "canvas" @keyword
-"\\B< *-*([A-Z][a-zA-Z0-9_]*)\\b>" @constructor
-"\\B\\s([A-Z][a-zA-Z0-9_]*):[\\s]*\\s" @keyword
-(pair key: (string) @variable)
-(number) @number
-["@", ",", ":"] @keyword
-"[\\[] *(([A-Z][a-zA-Z0-9_]*) *@ *)(([a-zA-Z_][a-zA-Z0-9_]*) *,* *)(([a-zA-Z_][a-zA-Z0-9_]*) *,* *)(([a-zA-Z_][a-zA-Z0-9_]*) *,* *)(([a-zA-Z_][a-zA-Z0-9_]*) *,* *)(([a-zA-Z_][a-zA-Z0-9_]*) *[\\]]:?)" @keyword
+(rule_definition) @constructor
+(class_definition) @operator
+(property_definition) @operator
+(pair_definition) @pair
+(int_literal) @number
+(keyword_definition) @keyword
+(dynamic_rule) @constructor
